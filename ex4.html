@@ -8,7 +8,7 @@
       <p>Get it done today</p>
       <input id="userinput"  type="text" placeholder="enter items">
       <button id="enter" onclick="addListAfterClick()">Enter</button>
-      <ul>
+      <ul id="myul">
          <li>Notebook <button onclick="deleteItem(this)">Delete</button></li> 
          <li>Jello <button onclick="deleteItem(this)">Delete</button></li> 
          <li>Spinach <button onclick="deleteItem(this)">Delete</button></li> 
@@ -34,7 +34,7 @@
                   deleteItem(this);
                };
                li.appendChild(deleteBtn);
-               
+
                ul.appendChild(li);
                input.value = "";
 
